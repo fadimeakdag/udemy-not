@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 15px; color: lightcoral;
+        }
+        p {
+            color: red;
+        }
+
+        p {
+            border-style: solid;
+            border-width: 1px;
+            border-color: green;
+            /*p etiketine border gelir ancak em ye gelmez kalıtımla aktarılmaz ama yine de inherit etmek için..*/
+
+        }
+        em{
+            border:inherit ;
+
+        } /*em ye inherit ettik border ı .en yakın kapsayıcı elemandan bu özelliği al diyoruz*/
+        em{
+            color: initial;/*p etiketindeki em nin inherit i iptal etanlamında*/
+        }
+
+        /* h1{
+            border: 1px solid red;
+        }  bu şelide kullanımda olur*/
+    </style>
+
+
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+            <h1 id="page-title" class="text-white">Welcome to MovieApp</h1>
+            <p>Lorem ipsum dolor sit amet, <em>consectetur </em> adipisicing elit. Incidunt, doloribus.</p>
+            <!--em etiketi kalıtım (inheritance)-->
+        </section>
+        <section>
+            <h2 id="page-subtitle" class="text-white" f18>How it works</h2>
+        </section>
+    </main>
+</body>
+
+</html>
